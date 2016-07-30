@@ -9110,10 +9110,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="93.98" y="25.4" size="1.778" layer="95"/>
 <pinref part="X2" gate="-2" pin="KL"/>
 <pinref part="X2" gate="-5" pin="KL"/>
-<wire x1="78.74" y1="43.18" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="43.18" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <junction x="78.74" y="43.18"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LAMP" class="0">
@@ -9142,9 +9141,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </net>
 <net name="L_FUSED" class="0">
 <segment>
-<label x="78.74" y="66.04" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<label x="63.5" y="48.26" size="1.778" layer="95"/>
 <pinref part="T1" gate="G$1" pin="A2"/>
 <wire x1="60.96" y1="48.26" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="F1" gate="1" pin="1"/>
@@ -9158,7 +9155,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 <junction x="73.66" y="48.26"/>
-<wire x1="81.28" y1="48.26" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="48.26" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PE" class="0">
@@ -9247,9 +9246,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <label x="2.54" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="60.96" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
-<label x="71.12" y="127" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="60.96" y1="124.46" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
+<label x="71.12" y="124.46" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9425,14 +9424,14 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </net>
 <net name="SWITCH" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
-<wire x1="60.96" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<label x="71.12" y="106.68" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
 <label x="-2.54" y="45.72" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="45.72" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PD2(INT0)"/>
+<wire x1="60.96" y1="127" x2="71.12" y2="127" width="0.1524" layer="91"/>
+<label x="71.12" y="127" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
